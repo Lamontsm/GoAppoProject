@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<users>
+  <group id="1F5OOPZAXWYVN1I2OLJVHK18EZ" name="Administrators" members="cn=appAdmin,ou=users,dc=app,dc=com|cn=SLamont,ou=users,dc=app,dc=com"/>
+  <group id="1MTG1HP61XJP" name="Teachers" members="cn=DDreyer,ou=users,dc=app,dc=com|cn=SLamont,ou=users,dc=app,dc=com"/>
+  <group id="234G1ESW1IXL" name="Students" members="cn=SLamont,ou=users,dc=app,dc=com"/>
+  <user id="1V5OOPZAXWYVN1I2OLJVHK18EY" username="appAdmin" enabled="true" description="Default admin user" firstName="app" lastName="admin" password="$2a$10$yhw/NNxGuapjyZwGhuLpVuUwWMyhGg7FVJHjAFyY2ZiyL5fcONRgy"/>
+  <user id="1U6O2D1P28MM" username="DDreyer" enabled="true" firstName="Denise" lastName="Dreyer" password="$2a$10$OXWejrPM/.xsUEdVSsCi7eQjnk4X4XgIMaIFw2y/EElBLXoZrUVPm"/>
+  <user id="23JL1X2V27HX" username="SLamont" enabled="true" firstName="Steve" lastName="Lamont" password="$2a$10$cl7B9GXILEqG8uAjvPZIWuvjMJdTRW5TJyMYLHnF7A5vAj4n1d9BS"/>
+  <ldap/>
+</users>

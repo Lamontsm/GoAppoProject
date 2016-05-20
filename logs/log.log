@@ -1,0 +1,1380 @@
+2016/05/18 13:35:11.437 [Thread-6] INFO  com.app.rcp.server.LocalServer - Configuring local server 
+2016/05/18 13:35:11.540 [Thread-6] INFO  com.app.rcp.server.LocalServer - Starting local server 
+2016/05/18 13:35:11.545 [Thread-6] INFO  org.eclipse.jetty.server.Server - jetty-9.3.6 
+2016/05/18 13:35:28.642 [Thread-6] INFO  /test - Spring WebApplicationInitializers detected on classpath: [com.app.runtime.testharness.ActivityFilter@126578c] 
+2016/05/18 13:35:29.324 [Thread-6] INFO  /test - Initializing Spring root WebApplicationContext 
+2016/05/18 13:35:29.324 [Thread-6] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started 
+2016/05/18 13:35:29.428 [Thread-6] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed May 18 13:35:29 PDT 2016]; root of context hierarchy 
+2016/05/18 13:35:29.485 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/security-context.xml] 
+2016/05/18 13:35:29.600 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [runtime.xml] 
+2016/05/18 13:35:29.676 [Thread-6] INFO  o.s.s.c.SecurityNamespaceHandler - Spring Security 'config' module version is 4.0.2.RELEASE 
+2016/05/18 13:35:30.792 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [userService.xml] 
+2016/05/18 13:35:30.827 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml] 
+2016/05/18 13:35:31.064 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml] 
+2016/05/18 13:35:31.220 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /auth/login* 
+2016/05/18 13:35:31.221 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /auth/register* 
+2016/05/18 13:35:31.221 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /favicon.ico 
+2016/05/18 13:35:31.221 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /resources/** 
+2016/05/18 13:35:31.222 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /static/** 
+2016/05/18 13:35:31.222 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /alerts 
+2016/05/18 13:35:31.222 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /register 
+2016/05/18 13:35:31.223 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /ws/** 
+2016/05/18 13:35:31.223 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /data/case 
+2016/05/18 13:35:31.224 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /data/session 
+2016/05/18 13:35:31.224 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /integration/services/* 
+2016/05/18 13:35:31.225 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'isAuthenticated()' for /** 
+2016/05/18 13:35:31.255 [Thread-6] INFO  o.s.s.c.h.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.session.ConcurrentSessionFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 300, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.logout.LogoutFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 700, <org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter#0>, order = 1100, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1500, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300] 
+2016/05/18 13:35:31.985 [Thread-6] INFO  o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [security.properties] 
+2016/05/18 13:35:31.990 [Thread-6] INFO  o.s.c.s.PropertySourcesPlaceholderConfigurer - Loading properties file from class path resource [config.properties] 
+2016/05/18 13:35:32.006 [Thread-6] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring 
+2016/05/18 13:35:32.475 [Start up] INFO  LICENSE - ############################################################# 
+2016/05/18 13:35:32.477 [Start up] INFO  LICENSE -  
+2016/05/18 13:35:32.477 [Start up] INFO  LICENSE - Test application 
+2016/05/18 13:35:32.477 [Start up] INFO  LICENSE -  
+2016/05/18 13:35:32.478 [Start up] INFO  LICENSE - ############################################################# 
+2016/05/18 13:35:32.714 [Thread-6] INFO  c.a.r.t.ConfigReloadListener - Test webapp config reloader started at C:\Users\Steve Lamont\AppData\Roaming\GOAPPO\.tmptest 
+2016/05/18 13:35:33.607 [Thread-6] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be / 
+2016/05/18 13:35:34.061 [Thread-6] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.SecurityContextPersistenceFilter@1d94b1d, org.springframework.security.web.session.ConcurrentSessionFilter@67ffb6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14b2b64, org.springframework.security.web.header.HeaderWriterFilter@1e1a5af, org.springframework.security.web.authentication.logout.LogoutFilter@ff93ad, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@13e410b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1ec5643, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@188534c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12ccb6b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@89fddc, org.springframework.security.web.session.SessionManagementFilter@116e600, org.springframework.security.web.access.ExceptionTranslationFilter@4dd49d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1912aac] 
+2016/05/18 13:35:34.083 [Thread-6] INFO  o.s.s.c.h.DefaultFilterChainValidator - Checking whether login URL '/auth/login' is accessible with your configuration 
+2016/05/18 13:35:34.157 [Thread-6] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 4833 ms 
+2016/05/18 13:35:34.451 [Thread-6] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@d5653c{/test,[file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/.tmptest/webinf/, jar:file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/wars/webapp-test.war!/],AVAILABLE}{jar:file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/wars/webapp-test.war!/} 
+2016/05/18 13:35:44.368 [Thread-6] INFO  / - No Spring WebApplicationInitializer types detected on classpath 
+2016/05/18 13:35:44.390 [Thread-6] INFO  / - Initializing Spring root WebApplicationContext 
+2016/05/18 13:35:44.391 [Thread-6] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization started 
+2016/05/18 13:35:44.534 [Thread-6] INFO  o.s.w.c.s.XmlWebApplicationContext - Refreshing Root WebApplicationContext: startup date [Wed May 18 13:35:44 PDT 2016]; root of context hierarchy 
+2016/05/18 13:35:44.613 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dev-local.xml] 
+2016/05/18 13:35:44.675 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [dev.xml] 
+2016/05/18 13:35:44.725 [Thread-6] INFO  o.s.s.c.SecurityNamespaceHandler - Spring Security 'config' module version is 4.0.2.RELEASE 
+2016/05/18 13:35:48.875 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml] 
+2016/05/18 13:35:48.890 [Thread-6] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml] 
+2016/05/18 13:35:49.184 [Thread-6] INFO  o.s.s.c.h.FilterInvocationSecurityMetadataSourceParser - Creating access control expression attribute 'permitAll' for /** 
+2016/05/18 13:35:49.214 [Thread-6] INFO  o.s.s.c.h.HttpSecurityBeanDefinitionParser - Checking sorted filter chain: [Root bean: class [org.springframework.security.web.access.channel.ChannelProcessingFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 100, Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.csrf.CsrfFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 600, <preAuthFilter>, order = 900, Root bean: class [org.springframework.security.web.savedrequest.RequestCacheAwareFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1600, Root bean: class [org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1700, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.session.SessionManagementFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2100, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2200, <exceptionTranslationFilter>, order = 2201, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2300] 
+2016/05/18 13:35:52.245 [Thread-6] INFO  org.apache.cxf.endpoint.ServerImpl - Setting the server's publish address to be null 
+2016/05/18 13:35:52.436 [Thread-6] WARN  o.s.b.GenericTypeAwarePropertyDescriptor - Invalid JavaBean property 'httpSessionStrategy' being accessed! Ambiguous write methods found next to actually used [public void org.springframework.session.web.http.SessionRepositoryFilter.setHttpSessionStrategy(org.springframework.session.web.http.MultiHttpSessionStrategy)]: [public void org.springframework.session.web.http.SessionRepositoryFilter.setHttpSessionStrategy(org.springframework.session.web.http.HttpSessionStrategy)] 
+2016/05/18 13:35:53.545 [Thread-6] INFO  o.s.s.w.a.c.ChannelProcessingFilter - Validated configuration attributes 
+2016/05/18 13:35:53.765 [Thread-6] INFO  o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.access.channel.ChannelProcessingFilter@1b18688, org.springframework.security.web.context.SecurityContextPersistenceFilter@2fc7f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@15f5bac, org.springframework.security.web.header.HeaderWriterFilter@12fe6f8, org.springframework.security.web.csrf.CsrfFilter@e5bc13, com.app.dev.local.PreAuthFilter@19d4934, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ef3d0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e4c447, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@14efa6c, org.springframework.security.web.session.SessionManagementFilter@6bcd58, org.springframework.security.web.access.ExceptionTranslationFilter@1867a36, com.app.dev.web.MyExceptionTranslationFilter@19e53fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1235cb8] 
+2016/05/18 13:35:53.794 [Thread-6] INFO  o.s.s.c.h.DefaultFilterChainValidator - Checking whether login URL '/auth/login' is accessible with your configuration 
+2016/05/18 13:35:53.829 [Thread-6] WARN  o.s.s.c.h.DefaultFilterChainValidator - Possible error: Filters at position 10 and 11 are both instances of org.springframework.security.web.access.ExceptionTranslationFilter 
+2016/05/18 13:35:54.895 [Thread-6] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 10503 ms 
+2016/05/18 13:35:55.289 [Thread-6] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.w.WebAppContext@1fe4dc7{/,[file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/.tmp/webinf/, jar:file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/wars/dev-local.war!/, jar:file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/.tmp/webinf/WEB-INF/lib/branding-2.0.0.019.jar!/META-INF/resources],AVAILABLE}{jar:file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/wars/dev-local.war!/} 
+2016/05/18 13:35:55.341 [Thread-6] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@1a5f1d7{HTTP/1.1,[http/1.1]}{127.0.0.1:9000} 
+2016/05/18 13:35:55.342 [Thread-6] INFO  org.eclipse.jetty.server.Server - Started @4491711ms 
+2016/05/18 13:35:55.342 [Thread-6] INFO  com.app.rcp.server.LocalServer - Started local server successfully. 
+2016/05/18 14:34:14.140 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Current version: 2.0.0.060, Update version: 2.0.0.060 
+2016/05/18 14:34:14.141 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Done checking updates 
+2016/05/18 15:34:14.120 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Current version: 2.0.0.060, Update version: 2.0.0.060 
+2016/05/18 15:34:14.121 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Done checking updates 
+2016/05/18 15:45:54.157 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 15:45:55.476 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 15:45:55.477 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 15:46:11.760 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-27518|0] (1) [Steve-Samsung-27518] 
+2016/05/18 15:46:11.852 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-27518, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:63307] 
+2016/05/18 15:46:11.858 [Thread-19] INFO  o.i.f.GlobalComponentRegistry - ISPN000128: Infinispan version: Infinispan 'Infinite Darkness' 8.0.1.Final 
+2016/05/18 15:46:14.190 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@d1f548: startup date [Wed May 18 15:46:14 PDT 2016]; root of context hierarchy 
+2016/05/18 15:46:14.859 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@135401e: startup date [Wed May 18 15:46:14 PDT 2016]; root of context hierarchy 
+2016/05/18 15:46:14.870 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@c41613: startup date [Wed May 18 15:46:14 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@135401e 
+2016/05/18 15:46:25.886 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 15:46:25.893 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 15:46:25.938 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@64231c  
+org.apache.lucene.util.ThreadInterruptedException: java.lang.InterruptedException: sleep interrupted
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:405) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:278) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:223) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:509) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+	Suppressed: java.nio.channels.ClosedByInterruptException: null
+		at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+		at sun.nio.ch.FileChannelImpl.force(FileChannelImpl.java:391) ~[na:1.8.0_66]
+		at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:395) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+		... 21 common frames omitted
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_66]
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:403) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	... 21 common frames omitted
+2016/05/18 15:46:25.948 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 15:46:26.005 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 15:46:26.005 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 15:46:41.651 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-11000|0] (1) [Steve-Samsung-11000] 
+2016/05/18 15:46:41.725 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-11000, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:54313] 
+2016/05/18 15:46:42.079 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@6d9b16: startup date [Wed May 18 15:46:42 PDT 2016]; root of context hierarchy 
+2016/05/18 15:46:42.088 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1aa7a10: startup date [Wed May 18 15:46:42 PDT 2016]; root of context hierarchy 
+2016/05/18 15:46:42.093 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@165ec96: startup date [Wed May 18 15:46:42 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@1aa7a10 
+2016/05/18 16:34:14.190 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Current version: 2.0.0.060, Update version: 2.0.0.060 
+2016/05/18 16:34:14.191 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Done checking updates 
+2016/05/18 16:36:02.876 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 16:36:02.895 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 16:36:02.910 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 16:36:02.910 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 16:36:02.970 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 16:36:02.970 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 16:36:08.324 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@2fd7  
+java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:525) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	... 10 common frames omitted
+2016/05/18 16:36:18.637 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-64166|0] (1) [Steve-Samsung-64166] 
+2016/05/18 16:36:18.750 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-64166, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:51443] 
+2016/05/18 16:36:19.270 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@bf3a3e: startup date [Wed May 18 16:36:19 PDT 2016]; root of context hierarchy 
+2016/05/18 16:36:19.279 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1641e2c: startup date [Wed May 18 16:36:19 PDT 2016]; root of context hierarchy 
+2016/05/18 16:36:19.288 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@1272290: startup date [Wed May 18 16:36:19 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@1641e2c 
+2016/05/18 16:36:19.426 [qtp33431138-47] ERROR freemarker.runtime - Error executing FreeMarker template 
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> widget.field  [in template "wireframe->For Each" at line 7, column 31]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 3 more):
+==> ${widget.field}  [in template "wireframe->For Each" at line 7, column 29]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:382) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:115) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IfBlock.accept(IfBlock.java:84) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IfBlock.accept(IfBlock.java:84) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.include(Environment.java:1712) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Interpret$TemplateProcessorModel.getWriter(Interpret.java:161) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitAndTransform(Environment.java:364) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:140) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:86) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.process(Environment.java:243) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.template.Template.process(Template.java:277) [freemarker-2.3.20.jar:2.3.20]
+	at com.app.dev.design.wireframe.WireframeModel.generateHTML(WireframeModel.java:77) [classes/:na]
+	at com.app.dev.design.ApplicationModel.writeWireframeFinalHtml(ApplicationModel.java:897) [classes/:na]
+	at com.app.dev.design.ApplicationModel.saveWireframe(ApplicationModel.java:887) [classes/:na]
+	at com.app.dev.design.rest.DevRESTService.saveWireframe(DevRESTService.java:495) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:200) [cxf-rt-frontend-jaxrs-3.1.2.jar:3.1.2]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:99) [cxf-rt-frontend-jaxrs-3.1.2.jar:3.1.2]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:251) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:171) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:293) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:212) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [client.jar:na]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:268) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:821) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1685) [client.jar:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter.doFilter(AbstractPreAuthenticatedProcessingFilter.java:116) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:120) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:152) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:125) [spring-session-1.0.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:65) [spring-session-1.0.2.RELEASE.jar:na]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [client.jar:na]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) [client.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1158) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [client.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1090) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [client.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [client.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [client.jar:na]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [client.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [client.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [client.jar:na]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) [client.jar:na]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [client.jar:na]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [client.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [client.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [client.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [client.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [client.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 16:36:20.463 [qtp33431138-47] ERROR freemarker.runtime - Error executing FreeMarker template 
+freemarker.core._TemplateModelException: Template created with "?interpret" has stopped with this error:
+
+---begin-message---
+The following has evaluated to null or missing:
+==> widget.field  [in template "wireframe->For Each" at line 7, column 31]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 3 more):
+==> ${widget.field}  [in template "wireframe->For Each" at line 7, column 29]
+---end-message---
+
+The failing instruction:
+==> @inlineConfig  [in template "wireframe" at line 170, column 14]
+	at freemarker.core.Interpret$TemplateProcessorModel.getWriter(Interpret.java:168) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitAndTransform(Environment.java:364) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:140) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:86) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.process(Environment.java:243) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.template.Template.process(Template.java:277) [freemarker-2.3.20.jar:2.3.20]
+	at com.app.dev.design.wireframe.WireframeModel.generateHTML(WireframeModel.java:77) [classes/:na]
+	at com.app.dev.design.ApplicationModel.writeWireframeFinalHtml(ApplicationModel.java:897) [classes/:na]
+	at com.app.dev.design.ApplicationModel.saveWireframe(ApplicationModel.java:887) [classes/:na]
+	at com.app.dev.design.rest.DevRESTService.saveWireframe(DevRESTService.java:495) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:200) [cxf-rt-frontend-jaxrs-3.1.2.jar:3.1.2]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:99) [cxf-rt-frontend-jaxrs-3.1.2.jar:3.1.2]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:251) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:171) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:293) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:212) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [client.jar:na]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:268) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:821) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1685) [client.jar:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter.doFilter(AbstractPreAuthenticatedProcessingFilter.java:116) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:120) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:152) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:125) [spring-session-1.0.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:65) [spring-session-1.0.2.RELEASE.jar:na]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [client.jar:na]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) [client.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1158) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [client.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1090) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [client.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [client.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [client.jar:na]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [client.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [client.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [client.jar:na]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) [client.jar:na]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [client.jar:na]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [client.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [client.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [client.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [client.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [client.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> widget.field  [in template "wireframe->For Each" at line 7, column 31]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 3 more):
+==> ${widget.field}  [in template "wireframe->For Each" at line 7, column 29]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:382) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:115) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IfBlock.accept(IfBlock.java:84) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IfBlock.accept(IfBlock.java:84) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.include(Environment.java:1712) [freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Interpret$TemplateProcessorModel.getWriter(Interpret.java:161) ~[freemarker-2.3.20.jar:2.3.20]
+	... 114 common frames omitted
+2016/05/18 16:36:21.641 [qtp33431138-47] ERROR c.a.d.d.wireframe.WireframeModel - Template created with "?interpret" has stopped with this error:
+
+---begin-message---
+The following has evaluated to null or missing:
+==> widget.field  [in template "wireframe->For Each" at line 7, column 31]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 3 more):
+==> ${widget.field}  [in template "wireframe->For Each" at line 7, column 29]
+---end-message---
+
+The failing instruction:
+==> @inlineConfig  [in template "wireframe" at line 170, column 14] 
+freemarker.core._TemplateModelException: Template created with "?interpret" has stopped with this error:
+
+---begin-message---
+The following has evaluated to null or missing:
+==> widget.field  [in template "wireframe->For Each" at line 7, column 31]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 3 more):
+==> ${widget.field}  [in template "wireframe->For Each" at line 7, column 29]
+---end-message---
+
+The failing instruction:
+==> @inlineConfig  [in template "wireframe" at line 170, column 14]
+	at freemarker.core.Interpret$TemplateProcessorModel.getWriter(Interpret.java:168) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitAndTransform(Environment.java:364) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:140) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.ConditionalBlock.accept(ConditionalBlock.java:86) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.process(Environment.java:243) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.template.Template.process(Template.java:277) ~[freemarker-2.3.20.jar:2.3.20]
+	at com.app.dev.design.wireframe.WireframeModel.generateHTML(WireframeModel.java:77) ~[classes/:na]
+	at com.app.dev.design.ApplicationModel.writeWireframeFinalHtml(ApplicationModel.java:897) [classes/:na]
+	at com.app.dev.design.ApplicationModel.saveWireframe(ApplicationModel.java:887) [classes/:na]
+	at com.app.dev.design.rest.DevRESTService.saveWireframe(DevRESTService.java:495) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.apache.cxf.service.invoker.AbstractInvoker.performInvocation(AbstractInvoker.java:180) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.service.invoker.AbstractInvoker.invoke(AbstractInvoker.java:96) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:200) [cxf-rt-frontend-jaxrs-3.1.2.jar:3.1.2]
+	at org.apache.cxf.jaxrs.JAXRSInvoker.invoke(JAXRSInvoker.java:99) [cxf-rt-frontend-jaxrs-3.1.2.jar:3.1.2]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor$1.run(ServiceInvokerInterceptor.java:59) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.interceptor.ServiceInvokerInterceptor.handleMessage(ServiceInvokerInterceptor.java:96) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.phase.PhaseInterceptorChain.doIntercept(PhaseInterceptorChain.java:308) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.ChainInitiationObserver.onMessage(ChainInitiationObserver.java:121) [cxf-core-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.http.AbstractHTTPDestination.invoke(AbstractHTTPDestination.java:251) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invokeDestination(ServletController.java:234) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:208) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.ServletController.invoke(ServletController.java:160) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.CXFNonSpringServlet.invoke(CXFNonSpringServlet.java:171) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.handleRequest(AbstractHTTPServlet.java:293) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.doPost(AbstractHTTPServlet.java:212) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707) [client.jar:na]
+	at org.apache.cxf.transport.servlet.AbstractHTTPServlet.service(AbstractHTTPServlet.java:268) [cxf-rt-transports-http-3.1.2.jar:3.1.2]
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:821) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1685) [client.jar:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:85) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:316) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:114) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:122) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:48) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.authentication.preauth.AbstractPreAuthenticatedProcessingFilter.doFilter(AbstractPreAuthenticatedProcessingFilter.java:116) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:120) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:53) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:91) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:152) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:330) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:213) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:176) [spring-security-web-4.0.2.RELEASE.jar:4.0.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:125) [spring-session-1.0.2.RELEASE.jar:na]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:65) [spring-session-1.0.2.RELEASE.jar:na]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.2.2.RELEASE.jar:4.2.2.RELEASE]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) [client.jar:na]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548) [client.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1158) [client.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [client.jar:na]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1090) [client.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [client.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerList.handle(HandlerList.java:52) [client.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:119) [client.jar:na]
+	at org.eclipse.jetty.server.Server.handle(Server.java:517) [client.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308) [client.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:242) [client.jar:na]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:261) [client.jar:na]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [client.jar:na]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:75) [client.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:213) [client.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:147) [client.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654) [client.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572) [client.jar:na]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> widget.field  [in template "wireframe->For Each" at line 7, column 31]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 3 more):
+==> ${widget.field}  [in template "wireframe->For Each" at line 7, column 29]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:382) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:115) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IfBlock.accept(IfBlock.java:84) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IfBlock.accept(IfBlock.java:84) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.MixedContent.accept(MixedContent.java:93) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.visit(Environment.java:265) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Environment.include(Environment.java:1712) ~[freemarker-2.3.20.jar:2.3.20]
+	at freemarker.core.Interpret$TemplateProcessorModel.getWriter(Interpret.java:161) ~[freemarker-2.3.20.jar:2.3.20]
+	... 114 common frames omitted
+2016/05/18 17:34:14.087 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Current version: 2.0.0.060, Update version: 2.0.0.060 
+2016/05/18 17:34:14.089 [Timer-0] INFO  com.app.rcp.boot.GetUpdates - Done checking updates 
+2016/05/18 17:34:40.195 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 17:34:40.200 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 17:34:40.210 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 17:34:40.233 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 17:34:40.308 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 17:34:40.308 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 17:34:41.727 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@8209c3  
+java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:525) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	... 10 common frames omitted
+2016/05/18 17:34:56.081 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-44528|0] (1) [Steve-Samsung-44528] 
+2016/05/18 17:34:56.166 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-44528, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:57252] 
+2016/05/18 17:34:56.504 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@ae6a6d: startup date [Wed May 18 17:34:56 PDT 2016]; root of context hierarchy 
+2016/05/18 17:34:56.513 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1260e64: startup date [Wed May 18 17:34:56 PDT 2016]; root of context hierarchy 
+2016/05/18 17:34:56.519 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@9c7227: startup date [Wed May 18 17:34:56 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@1260e64 
+2016/05/18 17:52:16.970 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 17:52:16.975 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 17:52:17.051 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 17:52:17.051 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@1ee9d51  
+org.apache.lucene.util.ThreadInterruptedException: java.lang.InterruptedException: sleep interrupted
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:405) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:278) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:223) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:509) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+	Suppressed: java.nio.channels.ClosedByInterruptException: null
+		at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+		at sun.nio.ch.FileChannelImpl.force(FileChannelImpl.java:391) ~[na:1.8.0_66]
+		at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:395) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+		... 21 common frames omitted
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_66]
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:403) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	... 21 common frames omitted
+2016/05/18 17:52:17.127 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 17:52:17.127 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 17:52:33.013 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-63803|0] (1) [Steve-Samsung-63803] 
+2016/05/18 17:52:33.111 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-63803, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:54563] 
+2016/05/18 17:52:33.558 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@dcdf5b: startup date [Wed May 18 17:52:33 PDT 2016]; root of context hierarchy 
+2016/05/18 17:52:33.572 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1164e6c: startup date [Wed May 18 17:52:33 PDT 2016]; root of context hierarchy 
+2016/05/18 17:52:33.599 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@15dc1ea: startup date [Wed May 18 17:52:33 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@1164e6c 
+2016/05/18 17:53:23.950 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 17:53:23.954 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 17:53:23.999 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@c25b69  
+org.apache.lucene.util.ThreadInterruptedException: java.lang.InterruptedException: sleep interrupted
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:405) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:278) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:223) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:509) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+	Suppressed: java.nio.channels.ClosedByInterruptException: null
+		at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+		at sun.nio.ch.FileChannelImpl.force(FileChannelImpl.java:391) ~[na:1.8.0_66]
+		at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:395) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+		... 21 common frames omitted
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_66]
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:403) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	... 21 common frames omitted
+2016/05/18 17:53:24.003 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 17:53:24.050 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 17:53:24.051 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 17:53:40.092 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-22906|0] (1) [Steve-Samsung-22906] 
+2016/05/18 17:53:40.151 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-22906, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:54412] 
+2016/05/18 17:53:40.473 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@9da644: startup date [Wed May 18 17:53:40 PDT 2016]; root of context hierarchy 
+2016/05/18 17:53:40.493 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1ebc44e: startup date [Wed May 18 17:53:40 PDT 2016]; root of context hierarchy 
+2016/05/18 17:53:40.499 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@5c5337: startup date [Wed May 18 17:53:40 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@1ebc44e 
+2016/05/18 17:55:50.819 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 17:55:50.834 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 17:55:50.850 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 17:55:50.875 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@10e13a8  
+org.infinispan.IllegalLifecycleStateException: Cache container has been stopped and cannot be reused. Recreate the cache container.
+	at org.infinispan.manager.DefaultCacheManager.assertIsNotTerminated(DefaultCacheManager.java:898) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at org.infinispan.manager.DefaultCacheManager.getCache(DefaultCacheManager.java:436) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at org.infinispan.manager.DefaultCacheManager.getCache(DefaultCacheManager.java:431) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:44) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+2016/05/18 17:55:50.903 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 17:55:50.904 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 17:56:07.267 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-51701|0] (1) [Steve-Samsung-51701] 
+2016/05/18 17:56:07.340 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-51701, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:63288] 
+2016/05/18 17:56:07.662 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@a7ed17: startup date [Wed May 18 17:56:07 PDT 2016]; root of context hierarchy 
+2016/05/18 17:56:07.671 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@18a7794: startup date [Wed May 18 17:56:07 PDT 2016]; root of context hierarchy 
+2016/05/18 17:56:07.677 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@1ab8c8: startup date [Wed May 18 17:56:07 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@18a7794 
+2016/05/18 17:56:17.851 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 17:56:17.856 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 17:56:17.885 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 17:56:17.892 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 17:56:17.926 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 17:56:17.926 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 17:56:18.764 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@1350e98  
+java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:525) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_66]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_66]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	... 10 common frames omitted
+2016/05/18 17:56:33.661 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-58549|0] (1) [Steve-Samsung-58549] 
+2016/05/18 17:56:33.735 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-58549, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:56427] 
+2016/05/18 17:56:34.064 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@8f013b: startup date [Wed May 18 17:56:34 PDT 2016]; root of context hierarchy 
+2016/05/18 17:56:34.071 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3a9d3b: startup date [Wed May 18 17:56:34 PDT 2016]; root of context hierarchy 
+2016/05/18 17:56:34.077 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@1d77eb5: startup date [Wed May 18 17:56:34 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@3a9d3b 
+2016/05/18 17:59:14.342 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 17:59:14.346 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 17:59:14.382 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@fc7dbf  
+org.apache.lucene.util.ThreadInterruptedException: java.lang.InterruptedException: sleep interrupted
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:405) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:278) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:223) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:509) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+	Suppressed: java.nio.channels.ClosedByInterruptException: null
+		at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+		at sun.nio.ch.FileChannelImpl.force(FileChannelImpl.java:391) ~[na:1.8.0_66]
+		at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:395) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+		... 20 common frames omitted
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_66]
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:403) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	... 20 common frames omitted
+2016/05/18 17:59:14.384 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 17:59:14.440 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 17:59:14.440 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 17:59:30.229 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-44690|0] (1) [Steve-Samsung-44690] 
+2016/05/18 17:59:30.343 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-44690, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:57122] 
+2016/05/18 17:59:30.950 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@9832b6: startup date [Wed May 18 17:59:30 PDT 2016]; root of context hierarchy 
+2016/05/18 17:59:30.961 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@18927ab: startup date [Wed May 18 17:59:30 PDT 2016]; root of context hierarchy 
+2016/05/18 17:59:30.968 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@10f5a6: startup date [Wed May 18 17:59:30 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@18927ab 
+2016/05/18 18:03:11.219 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 18:03:11.222 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 18:03:11.235 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 18:03:11.237 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 18:03:11.294 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 18:03:11.295 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 18:03:13.111 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@1cf36e2  
+java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:525) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	... 9 common frames omitted
+2016/05/18 18:03:27.201 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-30025|0] (1) [Steve-Samsung-30025] 
+2016/05/18 18:03:27.253 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-30025, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:49343] 
+2016/05/18 18:03:27.548 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@10eadb: startup date [Wed May 18 18:03:27 PDT 2016]; root of context hierarchy 
+2016/05/18 18:03:27.556 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@4f2a11: startup date [Wed May 18 18:03:27 PDT 2016]; root of context hierarchy 
+2016/05/18 18:03:27.560 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@139f7ea: startup date [Wed May 18 18:03:27 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@4f2a11 
+2016/05/18 18:03:57.746 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 18:03:57.752 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 18:03:57.762 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 18:03:57.764 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 18:03:57.806 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 18:03:57.806 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 18:03:59.414 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@b9a811  
+java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:525) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	... 9 common frames omitted
+2016/05/18 18:04:13.562 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-46152|0] (1) [Steve-Samsung-46152] 
+2016/05/18 18:04:13.635 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-46152, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:51747] 
+2016/05/18 18:04:13.957 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@13bcf4f: startup date [Wed May 18 18:04:13 PDT 2016]; root of context hierarchy 
+2016/05/18 18:04:13.965 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1a4d3c8: startup date [Wed May 18 18:04:13 PDT 2016]; root of context hierarchy 
+2016/05/18 18:04:13.970 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@15bd0b3: startup date [Wed May 18 18:04:13 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@1a4d3c8 
+2016/05/18 18:05:54.169 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 18:05:54.175 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 18:05:54.186 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 18:05:54.189 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 18:05:54.242 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 18:05:54.243 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 18:05:55.510 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@4f5d2c  
+java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:525) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	... 9 common frames omitted
+2016/05/18 18:06:10.028 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-54839|0] (1) [Steve-Samsung-54839] 
+2016/05/18 18:06:10.141 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-54839, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:58932] 
+2016/05/18 18:06:10.566 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1cb3b0a: startup date [Wed May 18 18:06:10 PDT 2016]; root of context hierarchy 
+2016/05/18 18:06:10.575 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@d07fea: startup date [Wed May 18 18:06:10 PDT 2016]; root of context hierarchy 
+2016/05/18 18:06:10.581 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@63b428: startup date [Wed May 18 18:06:10 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@d07fea 
+2016/05/18 18:06:20.793 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 18:06:20.799 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 18:06:20.812 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 18:06:20.812 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 18:06:20.865 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 18:06:20.865 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 18:06:21.695 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@13dc093  
+java.lang.RuntimeException: java.nio.channels.ClosedByInterruptException
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:525) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+Caused by: java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	... 9 common frames omitted
+2016/05/18 18:06:36.655 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-60442|0] (1) [Steve-Samsung-60442] 
+2016/05/18 18:06:36.720 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-60442, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:65405] 
+2016/05/18 18:06:37.057 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@145701e: startup date [Wed May 18 18:06:37 PDT 2016]; root of context hierarchy 
+2016/05/18 18:06:37.065 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1ee7e75: startup date [Wed May 18 18:06:37 PDT 2016]; root of context hierarchy 
+2016/05/18 18:06:37.070 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@15940df: startup date [Wed May 18 18:06:37 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@1ee7e75 
+2016/05/18 18:16:37.338 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 18:16:37.342 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 18:16:37.389 [listener-5] WARN  o.i.n.c.CacheManagerNotifierImpl - ISPN000331: Unable to invoke method public void com.app.search.LuceneIndexerInjector.cacheStarted(org.infinispan.notifications.cachemanagerlistener.event.CacheStartedEvent) on Object instance com.app.search.LuceneIndexerInjector@1beed2d  
+org.apache.lucene.util.ThreadInterruptedException: java.lang.InterruptedException: sleep interrupted
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:405) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.fsync(FSDirectory.java:278) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.store.FSDirectory.sync(FSDirectory.java:223) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:509) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) ~[runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) ~[infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) ~[na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) ~[na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) ~[na:1.8.0_66]
+	Suppressed: java.nio.channels.ClosedByInterruptException: null
+		at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+		at sun.nio.ch.FileChannelImpl.force(FileChannelImpl.java:391) ~[na:1.8.0_66]
+		at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:395) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+		... 20 common frames omitted
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) ~[na:1.8.0_66]
+	at org.apache.lucene.util.IOUtils.fsync(IOUtils.java:403) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	... 20 common frames omitted
+2016/05/18 18:16:37.394 [Thread-19] INFO  com.app.runtime.Runtime - Starting application MillsAPCSVideos with C:\Users\Steve Lamont\Desktop\GoAppo\apps\steven_lamonaco_com\MillsAPCSVideos\default\, data folder: C:\Users\Steve Lamont\Desktop\GoAppo\test 
+2016/05/18 18:16:37.466 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000078: Starting JGroups channel ISPN 
+2016/05/18 18:16:37.467 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000088: Unable to use any JGroups configuration mechanisms provided in properties {}. Using default JGroups configuration! 
+2016/05/18 18:16:47.124 [JavaFX Application Thread] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@b75c0f: startup date [Wed May 18 12:21:05 PDT 2016]; root of context hierarchy 
+2016/05/18 18:16:48.570 [JavaFX Application Thread] INFO  com.app.rcp.server.LocalServer - Shutting down server 
+2016/05/18 18:16:48.571 [JavaFX Application Thread] INFO  com.app.rcp.server.LocalServer - Stopping local server 
+2016/05/18 18:16:48.580 [JavaFX Application Thread] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@1a5f1d7{HTTP/1.1,[http/1.1]}{127.0.0.1:9000} 
+2016/05/18 18:16:48.584 [JavaFX Application Thread] INFO  / - Closing Spring root WebApplicationContext 
+2016/05/18 18:16:48.586 [JavaFX Application Thread] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Wed May 18 13:35:44 PDT 2016]; root of context hierarchy 
+2016/05/18 18:16:48.766 [JavaFX Application Thread] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@1fe4dc7{/,null,UNAVAILABLE}{jar:file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/wars/dev-local.war!/} 
+2016/05/18 18:16:48.769 [JavaFX Application Thread] INFO  /test - Closing Spring root WebApplicationContext 
+2016/05/18 18:16:48.770 [JavaFX Application Thread] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Wed May 18 13:35:29 PDT 2016]; root of context hierarchy 
+2016/05/18 18:16:53.228 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000094: Received new cluster view for channel ISPN: [Steve-Samsung-1221|0] (1) [Steve-Samsung-1221] 
+2016/05/18 18:16:53.319 [Thread-19] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000079: Channel ISPN local address is Steve-Samsung-1221, physical addresses are [2001:0:9d38:6abd:2ce0:62:cd51:12a4:63719] 
+2016/05/18 18:16:53.736 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1cdbc40: startup date [Wed May 18 18:16:53 PDT 2016]; root of context hierarchy 
+2016/05/18 18:16:53.746 [Thread-19] INFO  o.s.c.s.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@c128c7: startup date [Wed May 18 18:16:53 PDT 2016]; root of context hierarchy 
+2016/05/18 18:16:53.752 [Thread-19] INFO  o.s.c.s.GenericXmlApplicationContext - Refreshing org.springframework.context.support.GenericXmlApplicationContext@b627bb: startup date [Wed May 18 18:16:53 PDT 2016]; parent: org.springframework.context.support.GenericApplicationContext@c128c7 
+2016/05/18 18:16:54.000 [JavaFX Application Thread] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000080: Disconnecting JGroups channel ISPN 
+2016/05/18 18:16:54.005 [JavaFX Application Thread] INFO  o.i.r.t.jgroups.JGroupsTransport - ISPN000082: Stopping the RpcDispatcher for channel ISPN 
+2016/05/18 18:16:54.017 [listener-5] ERROR com.app.runtime.Environment - null 
+java.nio.channels.ClosedByInterruptException: null
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202) ~[na:1.8.0_66]
+	at sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:216) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFullyImpl(Channels.java:78) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.writeFully(Channels.java:101) ~[na:1.8.0_66]
+	at java.nio.channels.Channels.access$000(Channels.java:61) ~[na:1.8.0_66]
+	at java.nio.channels.Channels$1.write(Channels.java:174) ~[na:1.8.0_66]
+	at org.apache.lucene.store.FSDirectory$FSIndexOutput$1.write(FSDirectory.java:268) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at java.util.zip.CheckedOutputStream.write(CheckedOutputStream.java:73) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82) ~[na:1.8.0_66]
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140) ~[na:1.8.0_66]
+	at org.apache.lucene.store.OutputStreamIndexOutput.getChecksum(OutputStreamIndexOutput.java:80) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.codecs.CodecUtil.writeFooter(CodecUtil.java:310) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.write(SegmentInfos.java:507) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.SegmentInfos.prepareCommit(SegmentInfos.java:731) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.startCommit(IndexWriter.java:4319) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.prepareCommitInternal(IndexWriter.java:2763) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.commitInternal(IndexWriter.java:2866) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:972) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1015) ~[lucene-core-5.2.1.jar:5.2.1 1684708 - shalin - 2015-06-10 23:11:06]
+	at com.app.search.IndexWriterHolder.<init>(IndexWriterHolder.java:43) ~[runtime-2.0.0.021.jar:na]
+	at com.app.runtime.Environment.registerIndexWriterHolder(Environment.java:522) ~[runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexer.<init>(LuceneIndexer.java:44) [runtime-2.0.0.021.jar:na]
+	at com.app.search.LuceneIndexerInjector.cacheStarted(LuceneIndexerInjector.java:49) [runtime-2.0.0.021.jar:na]
+	at sun.reflect.GeneratedMethodAccessor600.invoke(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_66]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[na:1.8.0_66]
+	at org.infinispan.notifications.impl.AbstractListenerImpl$ListenerInvocationImpl$1.run(AbstractListenerImpl.java:286) [infinispan-core-8.0.1.Final.jar:8.0.1.Final]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [na:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [na:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [na:1.8.0_66]
+2016/05/18 18:16:54.201 [JavaFX Application Thread] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@d5653c{/test,null,UNAVAILABLE}{jar:file:///C:/Users/Steve%20Lamont/AppData/Roaming/GOAPPO/wars/webapp-test.war!/} 
+2016/05/18 18:16:54.203 [JavaFX Application Thread] INFO  com.app.rcp.server.LocalServer - Stopped local server 
