@@ -70,21 +70,10 @@
   <script type="text/javascript">
     var pageModel = null;
     function afterEnvLoaded() {
-       var dataSourceDefinitions = [{"type":"newCase","id":"ds1","cookieId":"_E0NNRX99IWUQ_1WX4HRYG7TP5M","name":"","dataStoreId":"","dataStoreTag":"","parameters":[{"name":"parentCaseId"}],"fields":[{"id":"parentCaseId","label":"(Parameter) parentCaseId","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"parameter"}],"actions":[],"caseModel":"","search":null,"backupDataSource":null,"parentCaseId":"","listDataSource":false},{"type":"workflow","id":"ds2","cookieId":"_TU0GXL5KOD2E_1GQI2JBG7APE1","name":"","dataStoreId":null,"dataStoreTag":null,"parameters":[{"name":"caseId"}],"fields":[{"id":"state","label":"State name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":""},{"id":"stateLabel","label":"State label","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":""},{"id":"model","label":"Model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":""},{"id":"workflowId","label":"ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":""},{"id":"createdBy","label":"Created By","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":""}],"actions":[],"model":null,"relatedCase":"${caseId}","listDataSource":false},{"type":"case","id":"ds3","cookieId":"1XN1FE44DJCWU_1BSBTN2SYL5DH","name":"projects","dataStoreId":"","dataStoreTag":"","parameters":[{"name":"caseId"}],"fields":[{"id":"Project Name","label":"Project Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"IsTaken","label":"IsTaken","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Owner","label":"Owner","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"meta.createdOn","label":"(Meta) Created on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedOn","label":"(Meta) Modified on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.id","label":"(Meta) Case ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.model","label":"(Meta) Case model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userLabel","label":"(Meta) Owner name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userId","label":"(Meta) Owner ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupLabel","label":"(Meta) Group name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupId","label":"(Meta) Group ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdById","label":"(Meta) Created By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdByLabel","label":"(Meta) Created By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedById","label":"(Meta) Modified By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedByLabel","label":"(Meta) Modified By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"caseId","label":"(Parameter) caseId","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"parameter"}],"actions":[{"id":"_20LC1GDU26UN","name":"add items","action":"","fn":"var config = { : '2SQA1L6U2HOH'};\nreturn this.goTo(config);","goTo":"","args":[{"key":"","value":"2SQA1L6U2HOH","page":true}],"fields":[],"requestParameters":[],"responseParameters":[],"triggeredEvent":"","type":"goTo","argValues":["2SQA1L6U2HOH"],"argKeys":[""]}],"caseModel":"/Projects","search":"${caseId}","backupDataSource":null,"listDataSource":false}];
-         var defaults = {};
-           defaults['parentCaseId'] = '';
-         dataSourceDefinitions[0].defaults = defaults;
-         var defaults = {};
-           defaults['state'] = '';
-           defaults['stateLabel'] = '';
-           defaults['model'] = '';
-           defaults['workflowId'] = '';
-           defaults['createdBy'] = '';
-         dataSourceDefinitions[1].defaults = defaults;
+       var dataSourceDefinitions = [{"type":"caseList","id":"ds2","cookieId":"1MB77R1SGBQQ_1IGO4QVAOD0IJ","name":"list of all projects","dataStoreId":"","dataStoreTag":"","parameters":[],"fields":[{"id":"Project Name","label":"Project Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Assigned Student","label":"Assigned Student","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"meta.createdOn","label":"(Meta) Created on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedOn","label":"(Meta) Modified on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.id","label":"(Meta) Case ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.model","label":"(Meta) Case model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userLabel","label":"(Meta) Owner name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userId","label":"(Meta) Owner ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupLabel","label":"(Meta) Group name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupId","label":"(Meta) Group ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdById","label":"(Meta) Created By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdByLabel","label":"(Meta) Created By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedById","label":"(Meta) Modified By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedByLabel","label":"(Meta) Modified By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"}],"actions":[{"id":"_1U8I1HJ92S3O","name":"select","action":"","fn":"var config = {page : '2SQA1L6U2HOH', caseId : $data.meta.id()};\nreturn this.goTo(config);","goTo":"","args":[{"key":"page","value":"2SQA1L6U2HOH","page":true},{"key":"caseId","value":"$data.meta.id()","page":false}],"fields":[],"requestParameters":[],"responseParameters":[],"triggeredEvent":"","type":"goTo","argKeys":["page","caseId"],"argValues":["2SQA1L6U2HOH","$data.meta.id()"]}],"caseModel":"/project","search":"model:\"/project\" AND -Assigned\\ Student:[* TO *]","rowDataSource":null,"pageSize":20,"listDataSource":true}];
          var defaults = {};
            defaults['Project Name'] = '';
-           defaults['IsTaken'] = '';
-           defaults['Owner'] = '';
+           defaults['Assigned Student'] = '';
            defaults['meta.createdOn'] = '';
            defaults['meta.modifiedOn'] = '';
            defaults['meta.id'] = '';
@@ -97,117 +86,41 @@
            defaults['meta.createdByLabel'] = '';
            defaults['meta.modifiedById'] = '';
            defaults['meta.modifiedByLabel'] = '';
-           defaults['caseId'] = '';
-         dataSourceDefinitions[2].defaults = defaults;
+         dataSourceDefinitions[0].defaults = defaults;
        pageModel = new PageModel(dataSourceDefinitions);
-         
-         var viewModel = pageModel['ds1'];
-         var $data = viewModel;
-         var $root = pageModel;
-           
-           viewModel['parentCaseId'].extend({
-           });
-           
          
          var viewModel = pageModel['ds2'];
          var $data = viewModel;
          var $root = pageModel;
-           
-           viewModel['state'].extend({
-           });
-           
-           
-           viewModel['stateLabel'].extend({
-           });
-           
-           
-           viewModel['model'].extend({
-           });
-           
-           
-           viewModel['workflowId'].extend({
-           });
-           
-           
-           viewModel['createdBy'].extend({
-           });
-           
-         
-         var viewModel = pageModel['ds3'];
-         var $data = viewModel;
-         var $root = pageModel;
-           
-           viewModel['Project Name'].extend({
-           });
-           
-           
-           viewModel['IsTaken'].extend({
-           });
-           
-           
-           viewModel['Owner'].extend({
-           });
-           
-           
-           viewModel['meta.createdOn'].extend({
-           });
-           
-           
-           viewModel['meta.modifiedOn'].extend({
-           });
-           
-           
-           viewModel['meta.id'].extend({
-           });
-           
-           
-           viewModel['meta.model'].extend({
-           });
-           
-           
-           viewModel['meta.userLabel'].extend({
-           });
-           
-           
-           viewModel['meta.userId'].extend({
-           });
-           
-           
-           viewModel['meta.groupLabel'].extend({
-           });
-           
-           
-           viewModel['meta.groupId'].extend({
-           });
-           
-           
-           viewModel['meta.createdById'].extend({
-           });
-           
-           
-           viewModel['meta.createdByLabel'].extend({
-           });
-           
-           
-           viewModel['meta.modifiedById'].extend({
-           });
-           
-           
-           viewModel['meta.modifiedByLabel'].extend({
-           });
-           
-           
-           viewModel['caseId'].extend({
-           });
-           
-           viewModel._20LC1GDU26UN = function($data, $parent, $root) {
-               var config = { : '2SQA1L6U2HOH'};
+           viewModel._1U8I1HJ92S3O = function($data, $parent, $root) {
+               var config = {page : '2SQA1L6U2HOH', caseId : $data.meta.id()};
 return this.goTo(config);
            };
+  var byX = {};
+      var columnModel = {id: "Project Name", field : "Project Name", label : "Name of the Project"};
+      byX['0'] = columnModel;
+      viewModel.visibleOrderedColumns.push(columnModel);
+    
+    viewModel.allColumns.push(columnModel);
+    var columnModel = {id: "Assigned Student", field : "Assigned Student", label : "Assigned Student"};
+      byX['5'] = columnModel;
+      viewModel.visibleOrderedColumns.push(columnModel);
+    
+    viewModel.allColumns.push(columnModel);
+        var col = byX['0'];
+        if (col) {
+          col.rowId = '2RC22JCB2EQF';
+        }
+        var col = byX['5'];
+        if (col) {
+          col.rowId = '1JZ125ID2JNM';
+        }
+viewModel.sorter(viewModel.allColumns()[0].id);
 
-viewModel._1HEW2EV6254Qargs = [
-  {key: '', value : '2SQA1L6U2HOH'},
-];       try {
+viewModel.allFields = [];
+    viewModel.allFields.push({id: "Project Name", label : "Project Name"});
+    viewModel.allFields.push({id: "Assigned Student", label : "Assigned Student"});
+       try {
        pageModel.initialize(function() {
          try {
          ko.applyBindings(pageModel, document.getElementById("mainContainer"));
@@ -333,17 +246,139 @@ viewModel._1HEW2EV6254Qargs = [
       <div id="mainContainer" class="container-fluid">
         <div class="row" style="min-height:0px"></div>
         <div class="row" style="min-height:560px">
-<div class='tight-margin  col-md-offset-0' data-bind=", css: {'col-md-10' : $root.maximizedPanel() == null, 'col-md-12' : $root.maximizedPanel() != null }, visible: ($root.maximizedPanel() == null) || '21IA1Q3P2OE1' == $root.maximizedPanel()">
+<div class=' col-md-offset-0' data-bind=", css: {'col-md-12' : $root.maximizedPanel() == null, 'col-md-12' : $root.maximizedPanel() != null }, visible: ($root.maximizedPanel() == null) || '21IA1Q3P2OE1' == $root.maximizedPanel()">
   <div class='panel panel-primary' style="min-height: 560px;position:relative">
     <div class='panel-heading'>
       <h3 class='panel-title'>Heading</h3>
     </div>
     <div class='panel-body'>
       <div class="container-fluid">
-        <div class="row" style="min-height:80px" data-bind="">
-    <div class='col-md-3 col-md-offset-0' data-bind="with: $root.ds3">
-  <button class="btn btn-primary" data-toggle="tooltip" title="" style="margin-top:20px" data-bind=" , click: _20LC1GDU26UN($data, $parent, $root)">add projects</button>
+        <div class="row" style="min-height:480px" data-bind="">
+    <div class='col-md-11 col-md-offset-0' data-bind="with: $root.ds2">
+<div id='1FKJ2O3I2MOWtable' style="margin-left:5px;margin-right:5px;">
+  <div class="row">
+  <div class="no-print col-md-12">
+    <div class="btn-group pull-right" data-bind="visible: filtersVisible">
+      <a href="#" data-bind="click: cancelFilters"  class="btn btn-default"><i class="fa fa-times"></i></a>
+      <a href="#" data-bind="click: applyFilters"  class="btn btn-primary"><i class="fa fa-check"></i></a>
+    </div>
+    <button class="btn btn-default pull-right" style="border:0px" data-bind="click: resetToDefaults, visible: !filtersVisible()"><i class="fa fa-undo"></i></button>
+    <button class="btn btn-default pull-right" style="border:0px" data-bind="click: showFilterPopover, css: {'btn-info' : filters().length > 0}, visible: !filtersVisible()"><i class="fa fa-filter"></i></button>
+       
+       <div style="min-height: 15px" data-bind="sortable: hiddenColumns">
+        <h5 style="display: inline; margin-right: 10px;"><span class="label label-default" data-bind="text: label"></span></h5>
+       </div>
+       <!-- ko if: hiddenColumns().length == 0 -->
+         <span style="position: absolute; top: 10px">
+         [ ... ]
+         </span>
+       <!-- /ko -->
+       
   </div>
+  </div>
+    <div data-bind="visible: filtersVisible" class="well no-print">
+      <div data-bind="foreach: $data.editFilters">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="form-group">
+              <!-- ko if: $index() > 0 -->
+              <select class="form-control" data-bind="value: combination, options: ['and','or'], allowValueUnset : true"></select>
+              <!-- /ko -->
+              <!-- ko if: $index() == 0 -->
+                <input type="text" disabled="disabled" class="form-control" value="Filter by">
+              <!-- /ko -->
+            </div>
+          </div>  
+          <div class="col-md-3">
+            <div class="form-group">
+              <select class="form-control" data-bind="value: field, options: $parent.allFields, optionsText: 'label', optionsValue: 'id', allowValueUnset : true"></select>
+            </div>
+          </div>  
+          <div class="col-md-2">
+            <div class="form-group">
+              <select class="form-control" data-bind="value: operator">
+                <option value=""></option>
+                <option value="=">=</option>
+                <option value="!=">!=</option>
+                <option value="greaterThan">&gt;</option>
+                <option value="lesserThan">&lt;</option>
+                <option value="greaterOrEqual">&ge;</option>
+                <option value="lesserOrEqual">&le;</option>
+                <option value="startsWith">Starts with</option>
+                <option value="endsWith">Ends with</option>
+                <option value="contains">Contains</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <input type="text"  class="form-control" data-bind="textInput: rightOperand">
+            </div>
+          </div>
+          <div class="col-md-1" style="padding-top: 5px;padding-bottom:5px;">
+            <i style="font-size: 150%" class="fa fa-times-circle" data-bind="click: $parent.deleteFilter"></i>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+           <div class="col-md-3">
+            <a href="#" data-bind="enable: editFilters().length <= 2, click: newFilter" class="btn btn-default"><i class="fa fa-plus-circle"></i></a>
+            <a href="#" data-bind="click: clearFilters"  class="btn btn-default"><i class="fa fa-eraser"></i></a>
+          </div>
+        </div>
+    </div>
+<table id="table" class="table table-striped  col-md-11">
+<thead>
+    <tr data-bind="sortable: visibleOrderedColumns">
+       <th>
+         <span class="glyphicon no-print" data-bind="click: $parent.clickSortColumn(id), css: {'glyphicon-sort-by-attributes' : $parent.sorter() == id && $parent.sortAsc(), 'glyphicon-sort-by-attributes-alt' : $parent.sorter() == id && !$parent.sortAsc(), 'glyphicon-sort' : $parent.sorter() != id }"></span> <span data-bind="text: label"></span>
+       </th>
+     </tr>
+</thead>
+<tfoot class="no-print">
+    <tr>
+      <td data-bind="attr : {colspan : visibleOrderedColumns().length}">
+        <div class="row-fluid">
+        <div class="col-md-4">
+          <div class="row-fluid" style="font-size:80%">
+          <!-- ko if : meta.total() == 0 -->
+            No records
+          <!-- /ko -->
+          <!-- ko if : meta.total() != 0 -->
+          <span data-bind="text: meta.from"></span> - <span data-bind="text: meta.to"></span> of <span data-bind="text: meta.total"></span> records
+          <!--  /ko -->
+          </div>
+        </div>
+        <div class="col-md-8">
+        <button class="btn btn-default btn-xs" style="border:0px" data-bind="click: $data.previousPage, enable: start() > 0"><i class="fa fa-arrow-left"></i></button>
+        <select class="form-control input-sm" style="display:inline;width:auto;" name="pageSize" data-bind="value : pageSize, options: [20,50,100]">
+        </select>
+        <button class="btn btn-default btn-xs" style="border:0px" data-bind="click: $data.nextPage, enable : (start() + pageSize()) < meta.total()"><i class="fa fa-arrow-right"></i></button>
+        <button class="btn btn-default btn-xs" style="border:0px" data-bind="click: $data.print('#1FKJ2O3I2MOWtable')"><i class="fa fa-print"></i></button>
+        <button class="btn btn-default btn-xs" style="border:0px" data-bind="click: $data.exportPDF"><i class="fa fa-file-pdf-o"></i></button>
+        <button class="btn btn-default btn-xs" style="border:0px" data-bind="click: $data.exportXLS"><i class="fa fa-file-excel-o"></i></button>
+        </div>
+        </div>
+      </td>
+    </tr>
+</tfoot>
+<tbody data-bind="foreach: data">
+<tr data-bind="click: $parent._1U8I1HJ92S3O($data, $parent, $root), foreach: $parent.visibleOrderedColumns">
+  <td data-bind="template : {name : $parent.inlineEditing() ? $data.editableRowId : $data.rowId, data : $parent}" style="padding: 2px;">
+  </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+  </div>
+
+  <script type="text/template" id="2RC22JCB2EQF">
+<span  data-bind="text : $data['Project Name'] ? ($data['Project Name'].mimeType ? $data['Project Name'].name : $data['Project Name']) : ''" style="text-align:left;">Text</span>
+  </script>
+  <script type="text/template" id="1JZ125ID2JNM">
+<span  data-bind="text : $data['Assigned Student'] ? ($data['Assigned Student'].mimeType ? $data['Assigned Student'].name : $data['Assigned Student']) : ''" style="text-align:left;">Text</span>
+  </script>
         </div>
       </div>
     </div>

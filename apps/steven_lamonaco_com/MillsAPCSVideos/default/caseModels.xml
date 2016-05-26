@@ -1,19 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <cases>
-  <case name="Projects" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
-    <permission gid="234G1ESW1IXL" mode="0444"/>
-    <description><![CDATA[List of projects available or taken]]></description>
-    <field name="Project Name" type="text" index="true" versioning="true">
-      <permission gid="234G1ESW1IXL"/>
-      <description><![CDATA[Name of possible video project]]></description>
-    </field>
-    <field name="IsTaken" type="text" index="true" versioning="true">
-      <permission gid="234G1ESW1IXL"/>
-      <description><![CDATA[Whether the project is available or not]]></description>
-    </field>
-    <field name="Owner" type="text" index="true" versioning="true">
-      <permission gid="234G1ESW1IXL"/>
-      <description><![CDATA[Name of student doing the project]]></description>
-    </field>
+  <case name="project" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <permission gid="234G1ESW1IXL" mode="666"/>
+    <field name="Project Name" type="text" index="true" versioning="true"/>
+    <field name="Assigned Student" type="text" index="true" versioning="true"/>
   </case>
 </cases>
