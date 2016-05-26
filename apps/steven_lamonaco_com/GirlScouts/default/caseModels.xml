@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cases>
+  <case name="CookiesCase" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="Name" type="text" index="true" versioning="true"/>
+    <field name="Packaging" type="text" index="true" versioning="true"/>
+    <field name="FDA Info" type="text" index="true" versioning="true"/>
+    <field name="Purchase Price" type="text" index="true" versioning="true"/>
+    <field name="Quantity" type="text" index="true" versioning="true"/>
+    <field name="Expiration" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="Facilities" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="Name" type="text" index="true" versioning="true"/>
+    <field name="Location" type="text" index="true" versioning="true"/>
+    <field name="Size" type="text" index="true" versioning="true"/>
+    <field name="Restrictions" type="text" index="true" versioning="true"/>
+    <field name="Hours" type="text" index="true" versioning="true"/>
+    <field name="Seasonality" type="text" index="true" versioning="true"/>
+    <field name="Comments" type="text" index="true" versioning="true"/>
+    <field name="Status" type="text" index="true" versioning="true"/>
+    <field name="Permission from" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="GirlScoutCase" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="First Name" type="text" index="true" versioning="true"/>
+    <field name="Last Name" type="text" index="true" versioning="true"/>
+    <field name="Phone Number" type="text" index="true" versioning="true"/>
+    <field name="Address" type="text" index="true" versioning="true"/>
+    <field name="Date Joined" type="date" index="true" versioning="true"/>
+    <field name="Background Expires" type="date" index="true" versioning="true"/>
+    <field name="SSN" type="text" index="true" versioning="true"/>
+    <field name="Photo" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="ParentCase" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="First Name" type="text" index="true" versioning="true"/>
+    <field name="Last Name" type="text" index="true" versioning="true"/>
+    <field name="Phone Number" type="text" index="true" versioning="true"/>
+    <field name="Address" type="text" index="true" versioning="true"/>
+    <field name="SSN" type="text" index="true" versioning="true"/>
+    <field name="Date Joined" type="date" index="true" versioning="true"/>
+    <field name="Background Expires" type="date" index="true" versioning="true"/>
+    <field name="Facebook Link" type="text" index="true" versioning="true"/>
+    <field name="Skype Address" type="text" index="true" versioning="true"/>
+    <field name="Photo" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="Parks" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="Name" type="text" index="true" versioning="true"/>
+    <field name="Location" type="text" index="true" versioning="true"/>
+    <field name="Size" type="text" index="true" versioning="true"/>
+    <field name="Restrictions" type="text" index="true" versioning="true"/>
+    <field name="Hours" type="text" index="true" versioning="true"/>
+    <field name="Seasonality" type="text" index="true" versioning="true"/>
+    <field name="Comments" type="text" index="true" versioning="true"/>
+    <field name="Status" type="text" index="true" versioning="true"/>
+    <field name="Permission from" type="text" index="true" versioning="true"/>
+    <field name="Location" type="geospatial" index="true" versioning="true"/>
+    <field name="Address" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="SupplierCase" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="Contact Name" type="text" index="true" versioning="true"/>
+    <field name="Company Name" type="text" index="true" versioning="true"/>
+    <field name="Phone Number" type="text" index="true" versioning="true"/>
+    <field name="Address" type="text" index="true" versioning="true"/>
+    <field name="EIN" type="text" index="true" versioning="true"/>
+    <field name="Date Joined" type="date" index="true" versioning="true"/>
+    <field name="Background Expires" type="date" index="true" versioning="true"/>
+    <field name="Facebook Link" type="text" index="true" versioning="true"/>
+    <field name="Skype Address" type="text" index="true" versioning="true"/>
+    <field name="Status" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="TeamLeaderCase" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="First Name" type="text" index="true" versioning="true"/>
+    <field name="Last Name" type="text" index="true" versioning="true"/>
+    <field name="Phone Number" type="text" index="true" versioning="true"/>
+    <field name="Address" type="text" index="true" versioning="true"/>
+    <field name="SSN" type="text" index="true" versioning="true"/>
+    <field name="Date Joined" type="date" index="true" versioning="true"/>
+    <field name="Background Expires" type="date" index="true" versioning="true"/>
+    <field name="Facebook Link" type="text" index="true" versioning="true"/>
+    <field name="Skype Address" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="TeamMemberCase" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="First Name" type="text" index="true" versioning="true"/>
+    <field name="Last Name" type="text" index="true" versioning="true"/>
+    <field name="Phone Number" type="text" index="true" versioning="true"/>
+    <field name="Address" type="text" index="true" versioning="true"/>
+    <field name="SSN" type="text" index="true" versioning="true"/>
+    <field name="Date Joined" type="date" index="true" versioning="true"/>
+    <field name="Background Expires" type="date" index="true" versioning="true"/>
+    <field name="Facebook Link" type="text" index="true" versioning="true"/>
+    <field name="Skype Address" type="text" index="true" versioning="true"/>
+    <field name="Photo" type="text" index="true" versioning="true"/>
+  </case>
+  <case name="Teams" dataStoreId="cases" versioningDataStoreId="versions" versioning="true">
+    <field name="Name" type="text" index="true" versioning="true"/>
+    <field name="Motto" type="text" index="true" versioning="true"/>
+    <field name="Size" type="text" index="true" versioning="true"/>
+    <field name="Geo Location" type="text" index="true" versioning="true"/>
+  </case>
+</cases>

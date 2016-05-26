@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<users>
+  <group id="1F5OOPZAXWYVN1I2OLJVHK18EZ" name="Administrators" members="cn=appAdmin,ou=users,dc=app,dc=com"/>
+  <group id="27RI1HNC1R2P" name="Troop Leaders" members="cn=troopleader1,ou=users,dc=app,dc=com"/>
+  <group id="2PE42KGI1O0C" name="Parents" members="cn=parent1,ou=users,dc=app,dc=com"/>
+  <group id="2Q3F23L32OVV" name="Girl Scouts" members="cn=girl1,ou=users,dc=app,dc=com"/>
+  <group id="2BDG1QBP1FPX" name="Parks"/>
+  <group id="2ESJ1GID2BI5" name="Facilities"/>
+  <group id="2KE72D0K2O79" name="Management"/>
+  <group id="28XD2LAI1I1R" name="Suppliers" members="cn=supplier1,ou=users,dc=app,dc=com"/>
+  <user id="1V5OOPZAXWYVN1I2OLJVHK18EY" username="appAdmin" enabled="true" description="Default admin user" firstName="app" lastName="admin" password="$2a$10$yhw/NNxGuapjyZwGhuLpVuUwWMyhGg7FVJHjAFyY2ZiyL5fcONRgy"/>
+  <user id="1FBC2LK22RRR" username="troopleader1" enabled="true" firstName="troop1" lastName="leader1" mail="troopleader1@example.com" password="$2a$10$9Fn0ZZEfnGDJczDKWRmKEuwbJk2aG2xWm1A36a/VvzSRFffBzyBh2"/>
+  <user id="2J731WKO2C7O" username="parent1" enabled="true" firstName="parent1" lastName="parent1" mail="parent1@example.com" password="$2a$10$DP22SCUfRb46CrBMi8b4qO5GK0ngKuGkWfruAOWB6TSUiOB6Mn11C"/>
+  <user id="1LUL1GA922HT" username="girl1" enabled="true" firstName="girl1" lastName="scout1" mail="girlscout1@example.com" password="$2a$10$GG6Nz51SeTOKc3af1J/uPOpqvpV7zZnir6.UKtItV2FTOdETdFwd."/>
+  <user id="1ZC91NQ01QXD" username="supplier1" enabled="true" firstName="supplier1" lastName="supplier1" mail="supplier1@example.com" password="$2a$10$eZL8g1XHewixd3XIGnx3geqQ4o62Sy6vxolGPhO.Bts7HlEvLd/qC"/>
+  <ldap/>
+</users>

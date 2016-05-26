@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+
+	<title>Enterprise Application</title>
+
+	<!-- Load framework files -->
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+  
+  <link rel="stylesheet" href="/resources/js/lib/bootstrap/dist/css/bootstrap.min.css">
+  <link href="/static/navbar/navbar.css" rel="stylesheet">
+
+  <script type="text/javascript" src="/resources/js/lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/jqueryui/jquery-ui.min.js"></script>
+  <link href="/resources/js/lib/jqueryui/themes/base/jquery-ui.min.css" rel="stylesheet">
+  <link href="/resources/js/lib/jquery-ui-bootstrap/jquery.ui.theme.css" rel="stylesheet">
+  <script type="text/javascript" src="/resources/js/lib/datetimepicker/jquery.datetimepicker.js"></script>
+  <link href="/resources/js/lib/datetimepicker/jquery.datetimepicker.css" rel="stylesheet">
+  <script type="text/javascript">
+    Date.parseDate = function( input, format ){
+      return moment(input,format).toDate();
+    };
+    Date.prototype.dateFormat = function( format ){
+      return moment(this).format(format);
+    };
+  </script>
+  
+  <script type="text/javascript" src="/resources/js/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/knockoutjs/dist/knockout.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/knockout-mapping/build/output/knockout.mapping-latest.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/knockout-sortable/build/knockout-sortable.min.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/knockout-jqueryui/dist/knockout-jqueryui.min.js"></script>
+  
+  
+  <link rel="stylesheet" href="/resources/js/lib/selectize/dist/css/selectize.bootstrap3.css">
+  <script type="text/javascript" src="/resources/js/lib/sifter/sifter.min.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/microplugin/src/microplugin.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/selectize/dist/js/selectize.min.js"></script>
+  <script type="text/javascript" src="/resources/js/lib/ko_selectize/ko_selectize.js"></script>
+  
+  <script type="text/javascript">
+   CONTEXT_PATH = '';
+  </script>
+  <script type="text/javascript" src="/resources/js/lib/knockout-validation/dist/knockout.validation.min.js"></script>
+  <script src="/resources/js/lib/jquery.inputmask/dist/inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
+  <script src="/resources/js/lib/app/page.js" type="text/javascript"></script>
+  
+  <link href="/resources/js/lib/fontawesome/css/font-awesome.min.css" rel="stylesheet">
+  <script type="text/javascript" src="/resources/js/lib/autofill-event/src/autofill-event.js"></script>
+  <script src="/resources/js/lib/app/viewModel.js" type="text/javascript"></script>
+  	 
+  <script type="text/javascript" src="/resources/js/lib/jquery.validate/dist/jquery.validate.min.js"></script>
+  <script src="/resources/js/lib/d3/d3.min.js"></script>
+  <script src="/resources/js/lib/vega/vega.min.js"></script>
+  
+  <script src="/resources/js/lib/ol/ol.js"></script>
+  <link rel="stylesheet" href="/resources/js/lib/ol/ol.css">
+  <style>
+    img.olTileImage {
+        max-width: none;
+    }
+  </style>
+  
+  <script type="text/javascript">
+    var pageModel = null;
+    function afterEnvLoaded() {
+       var dataSourceDefinitions = [{"type":"newCase","id":"ds1","cookieId":"15DKCYLEFXSLT_1ESX6IRCGNZ2I","name":"A new case of a team leader","dataStoreId":"","dataStoreTag":"","parameters":[],"fields":[{"id":"First Name","label":"First Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Last Name","label":"Last Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Phone Number","label":"Phone Number","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Address","label":"Address","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"SSN","label":"SSN","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Date Joined","label":"Date Joined","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Background Expires","label":"Background Expires","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Facebook Link","label":"Facebook Link","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Skype Address","label":"Skype Address","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"meta.createdOn","label":"(Meta) Created on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedOn","label":"(Meta) Modified on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.id","label":"(Meta) Case ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.model","label":"(Meta) Case model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userLabel","label":"(Meta) Owner name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userId","label":"(Meta) Owner ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupLabel","label":"(Meta) Group name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupId","label":"(Meta) Group ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdById","label":"(Meta) Created By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdByLabel","label":"(Meta) Created By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedById","label":"(Meta) Modified By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedByLabel","label":"(Meta) Modified By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"}],"actions":[],"caseModel":"/TeamLeaderCase","search":null,"backupDataSource":null,"parentCaseId":"","listDataSource":false},{"type":"case","id":"ds2","cookieId":"1I3VNBFOYCFDE_1H3RB0FJ4Z4AP","name":"an existing case of a team leader","dataStoreId":"","dataStoreTag":"","parameters":[{"name":"caseId"}],"fields":[{"id":"First Name","label":"First Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Last Name","label":"Last Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Phone Number","label":"Phone Number","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Address","label":"Address","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"SSN","label":"SSN","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Date Joined","label":"Date Joined","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Background Expires","label":"Background Expires","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Facebook Link","label":"Facebook Link","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Skype Address","label":"Skype Address","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"meta.createdOn","label":"(Meta) Created on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedOn","label":"(Meta) Modified on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.id","label":"(Meta) Case ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.model","label":"(Meta) Case model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userLabel","label":"(Meta) Owner name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userId","label":"(Meta) Owner ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupLabel","label":"(Meta) Group name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupId","label":"(Meta) Group ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdById","label":"(Meta) Created By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdByLabel","label":"(Meta) Created By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedById","label":"(Meta) Modified By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedByLabel","label":"(Meta) Modified By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"caseId","label":"(Parameter) caseId","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"parameter"}],"actions":[{"id":"_1G0E2MH31UCJ","name":"Save","action":"","fn":"var config = {};\nreturn this.save(config);","goTo":"","args":[],"fields":[],"requestParameters":[],"responseParameters":[],"triggeredEvent":"","type":"save","argKeys":[],"argValues":[]}],"caseModel":"/TeamLeaderCase","search":"${caseId}","backupDataSource":"ds1","listDataSource":false}];
+         var defaults = {};
+           defaults['First Name'] = '';
+           defaults['Last Name'] = '';
+           defaults['Phone Number'] = '';
+           defaults['Address'] = '';
+           defaults['SSN'] = '';
+           defaults['Date Joined'] = '';
+           defaults['Background Expires'] = '';
+           defaults['Facebook Link'] = '';
+           defaults['Skype Address'] = '';
+           defaults['meta.createdOn'] = '';
+           defaults['meta.modifiedOn'] = '';
+           defaults['meta.id'] = '';
+           defaults['meta.model'] = '';
+           defaults['meta.userLabel'] = '';
+           defaults['meta.userId'] = '';
+           defaults['meta.groupLabel'] = '';
+           defaults['meta.groupId'] = '';
+           defaults['meta.createdById'] = '';
+           defaults['meta.createdByLabel'] = '';
+           defaults['meta.modifiedById'] = '';
+           defaults['meta.modifiedByLabel'] = '';
+         dataSourceDefinitions[0].defaults = defaults;
+         var defaults = {};
+           defaults['First Name'] = '';
+           defaults['Last Name'] = '';
+           defaults['Phone Number'] = '';
+           defaults['Address'] = '';
+           defaults['SSN'] = '';
+           defaults['Date Joined'] = '';
+           defaults['Background Expires'] = '';
+           defaults['Facebook Link'] = '';
+           defaults['Skype Address'] = '';
+           defaults['meta.createdOn'] = '';
+           defaults['meta.modifiedOn'] = '';
+           defaults['meta.id'] = '';
+           defaults['meta.model'] = '';
+           defaults['meta.userLabel'] = '';
+           defaults['meta.userId'] = '';
+           defaults['meta.groupLabel'] = '';
+           defaults['meta.groupId'] = '';
+           defaults['meta.createdById'] = '';
+           defaults['meta.createdByLabel'] = '';
+           defaults['meta.modifiedById'] = '';
+           defaults['meta.modifiedByLabel'] = '';
+           defaults['caseId'] = '';
+         dataSourceDefinitions[1].defaults = defaults;
+       pageModel = new PageModel(dataSourceDefinitions);
+         
+         var viewModel = pageModel['ds1'];
+         var $data = viewModel;
+         var $root = pageModel;
+           
+           viewModel['First Name'].extend({
+           });
+           
+           
+           viewModel['Last Name'].extend({
+           });
+           
+           
+           viewModel['Phone Number'].extend({
+           });
+           
+           
+           viewModel['Address'].extend({
+           });
+           
+           
+           viewModel['SSN'].extend({
+           });
+           
+           
+           viewModel['Date Joined'].extend({
+           });
+           
+           
+           viewModel['Background Expires'].extend({
+           });
+           
+           
+           viewModel['Facebook Link'].extend({
+           });
+           
+           
+           viewModel['Skype Address'].extend({
+           });
+           
+           
+           viewModel['meta.createdOn'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedOn'].extend({
+           });
+           
+           
+           viewModel['meta.id'].extend({
+           });
+           
+           
+           viewModel['meta.model'].extend({
+           });
+           
+           
+           viewModel['meta.userLabel'].extend({
+           });
+           
+           
+           viewModel['meta.userId'].extend({
+           });
+           
+           
+           viewModel['meta.groupLabel'].extend({
+           });
+           
+           
+           viewModel['meta.groupId'].extend({
+           });
+           
+           
+           viewModel['meta.createdById'].extend({
+           });
+           
+           
+           viewModel['meta.createdByLabel'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedById'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedByLabel'].extend({
+           });
+           
+         
+         var viewModel = pageModel['ds2'];
+         var $data = viewModel;
+         var $root = pageModel;
+           
+           viewModel['First Name'].extend({
+           });
+           
+           
+           viewModel['Last Name'].extend({
+           });
+           
+           
+           viewModel['Phone Number'].extend({
+           });
+           
+           
+           viewModel['Address'].extend({
+           });
+           
+           
+           viewModel['SSN'].extend({
+           });
+           
+           
+           viewModel['Date Joined'].extend({
+           });
+           
+           
+           viewModel['Background Expires'].extend({
+           });
+           
+           
+           viewModel['Facebook Link'].extend({
+           });
+           
+           
+           viewModel['Skype Address'].extend({
+           });
+           
+           
+           viewModel['meta.createdOn'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedOn'].extend({
+           });
+           
+           
+           viewModel['meta.id'].extend({
+           });
+           
+           
+           viewModel['meta.model'].extend({
+           });
+           
+           
+           viewModel['meta.userLabel'].extend({
+           });
+           
+           
+           viewModel['meta.userId'].extend({
+           });
+           
+           
+           viewModel['meta.groupLabel'].extend({
+           });
+           
+           
+           viewModel['meta.groupId'].extend({
+           });
+           
+           
+           viewModel['meta.createdById'].extend({
+           });
+           
+           
+           viewModel['meta.createdByLabel'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedById'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedByLabel'].extend({
+           });
+           
+           
+           viewModel['caseId'].extend({
+           });
+           
+           viewModel._1G0E2MH31UCJ = function($data, $parent, $root) {
+               var config = {};
+return this.save(config);
+           };
+
+viewModel._2JHH1SYM22VOargs = [
+];       try {
+       pageModel.initialize(function() {
+         try {
+         ko.applyBindings(pageModel, document.getElementById("mainContainer"));
+         
+         ko.utils.arrayForEach(pageModel.dataSources, function(ds) {
+           if (typeof(ds.afterBinding) === 'function') {
+             ds.afterBinding();
+           }
+         });
+         
+         pageModel.somethingHasChanged = ko.pureComputed(function() {
+           if (ko.utils.arrayFirst(pageModel.dataSources, function(ds) {
+             return ds.changeTracker && ds.changeTracker().somethingHasChanged();
+           }) != null) {
+             return true;
+           } else {
+             return false;
+           } 
+         }, pageModel);
+         
+         window.onbeforeunload = function() {
+           if (pageModel.somethingHasChanged()) {
+             return "YOU HAVE UNSAVED CHANGES.";
+           }
+         }
+         } finally {
+           $("#loading").fadeOut(200);
+           $("#page").fadeIn(200);
+         }
+       });
+       } catch(e) {
+         console.log(e);
+         alert("There was a problem loading the page.");
+         $("#loading").fadeOut(200);
+         $("#page").fadeIn(200);
+       }
+     }
+   </script>
+</head>
+
+<body>
+<div class="container-fluid" style="display: none" id="page">
+  <div id="overlay" style="position:fixed;display: none;
+    top:0;
+    left:0;
+    alpha:0.3;
+    background:rgba(0,0,0,0.6);
+    z-index:5;
+    width:100%;
+    height:100%;"><div id="spinner" style="width: 50px; margin: 200px auto;"><i class="fa fa-refresh fa-spin fa-5x" style="color: #fff;"></i></div></div>
+  <div id="loading" style="position:fixed;
+    top:0;
+    left:0;
+    alpha:0.3;
+    background:whitesmoke;
+    z-index:5;
+    width:100%;
+    height:100%;"><div id="spinner" style="margin-top: 300px;text-align:center;"><i class="fa fa-spinner fa-spin fa-5x fa-pulse" style="color: lightblue;font-size: 3000%"></i></div></div>
+     <!-- Static navbar -->
+     <nav class="navbar navbar-default no-print">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="/" id="navbar-brand"><span data-bind="text: appTitle"></span><img data-bind="attr : {'src' : logo}, visible: logo && logo.length > 0" style="max-width: 100px; max-height: 40px;margin: -8px -8px;"></a>
+         </div>
+         <div id="navbar" class="navbar-collapse collapse">
+           <script type="text/template" id="submenu">
+             <!-- ko if: items.length > 0 -->
+             <li class="divider"></li>
+             <!-- ko foreach: items -->
+             <!-- ko if: name != '' && name != null -->
+               <a role="button" data-bind="attr: {href : CONTEXT_PATH + url}, text: name"></a>
+               <!-- ko template: { name: 'submenu'} -->
+             <!-- /ko -->
+             <!-- /ko -->
+             <!-- /ko -->
+             <!-- /ko -->
+           </script>
+           <ul class="nav navbar-nav" data-bind="foreach : menu">
+             <!-- ko if: name != '' && name != null -->
+             <li class="dropdown">
+               <!-- ko if: items.length == 0 -->
+               <a class="dropdown-toggle" aria-expanded="false" data-bind="attr: {href : CONTEXT_PATH + url}, text: name"></a>
+               <!-- /ko -->
+               <!-- ko if: items.length > 0 -->
+               <a class="dropdown-toggle" aria-expanded="false" data-bind="attr: {href : url != '' ? CONTEXT_PATH + url : ''}, text: name"></a>
+               <ul class="dropdown-menu" role="menu" data-bind="foreach : items">
+                 <li>
+                   <a href="" role="button" aria-expanded="false" data-bind="attr: {href : CONTEXT_PATH + url}, text: name"></a>
+                   <!-- ko template: { name: 'submenu'} -->
+                   <!-- /ko -->
+                   <!-- ko if: ($index() != ($parent.items.length - 1) && items.length > 0) -->
+                     <li class="divider"></li>
+                   <!-- /ko -->
+                 </li>
+               </ul>
+               <!-- /ko -->
+             </li>
+             <!-- /ko -->
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+             <li class="active" id="userLabel"><a href="./" data-bind="text: session.userLabel"><span class="sr-only">(current)</span></a></li>
+             <li><a href="/logout">Logout</a></li>
+           </ul>
+         </div><!--/.nav-collapse -->
+       </div><!--/.container-fluid -->
+     </nav>
+
+    <div id="alerts"></div>
+    <script type="text/javascript">
+    $.get(CONTEXT_PATH + "/rest/alerts", function(data) {
+      $(data).each(function(index, alert) {
+        $("#alerts").append('<div class="alert alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>' + alert.text + '</div>');
+      });
+    });
+    var config = {};
+    </script>
+      <div id="mainContainer" class="container-fluid">
+        <div class="row" style="min-height:0px"></div>
+        <div class="row" style="min-height:560px">
+<div class=' col-md-offset-0' data-bind=", css: {'col-md-12' : $root.maximizedPanel() == null, 'col-md-12' : $root.maximizedPanel() != null }, visible: ($root.maximizedPanel() == null) || '1TZB1U0R28W3' == $root.maximizedPanel()">
+  <div class='panel panel-primary' style="min-height: 560px;position:relative">
+    <div class='panel-heading'>
+      <h3 class='panel-title'>Heading</h3>
+    </div>
+    <div class='panel-body'>
+      <div class="container-fluid">
+        <div class="row" style="min-height:80px" data-bind="">
+    <div class='col-md-5 col-md-offset-0' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['First Name'], visible : fieldVisible('First Name', $data)">
+    <label for='First Name' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='First Name' data-content=''
+    > First Name</label>
+  <input type='text' name='First Name' class='form-control ' data-bind="enable : fieldEditable('First Name', $data), textInput: $data['First Name']">
+  </div>
+  </div>
+    <div class='col-md-6 col-md-offset-0' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['Last Name'], visible : fieldVisible('Last Name', $data)">
+    <label for='Last Name' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='Last Name' data-content=''
+    > Last Name</label>
+  <input type='text' name='Last Name' class='form-control ' data-bind="enable : fieldEditable('Last Name', $data), textInput: $data['Last Name']">
+  </div>
+  </div>
+        </div>
+        <div class="row" style="min-height:80px" data-bind="">
+    <div class='col-md-4 col-md-offset-0' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['Phone Number'], visible : fieldVisible('Phone Number', $data)">
+    <label for='Phone Number' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='Phone Number' data-content=''
+    > Phone Number</label>
+  <input type='text' name='Phone Number' class='form-control ' data-bind="enable : fieldEditable('Phone Number', $data), mask: '(999) 999-9999',textInput: $data['Phone Number']">
+  </div>
+  </div>
+    <div class='col-md-4 col-md-offset-1' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['SSN'], visible : fieldVisible('SSN', $data)">
+    <label for='SSN' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='SSN' data-content=''
+    > SSN</label>
+  <input type='text' name='SSN' class='form-control ' data-bind="enable : fieldEditable('SSN', $data), mask: '999-99-9999',textInput: $data['SSN']">
+  </div>
+  </div>
+        </div>
+        <div class="row" style="min-height:80px" data-bind="">
+    <div class='col-md-4 col-md-offset-0' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['Date Joined'], visible : fieldVisible('Date Joined', $data)">
+    <label for='Date Joined' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='Date Joined' data-content=''
+    > Date Joined</label>
+  <input type='text' name='Date Joined' class='form-control ' data-bind="datetimepicker: {format: 'MM/DD/YYYY HH:mm', timepicker: false, datepicker: true}, enable : fieldEditable('Date Joined', $data), value: $data['Date Joined']">
+  </div>
+  </div>
+    <div class='col-md-4 col-md-offset-1' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['Background Expires'], visible : fieldVisible('Background Expires', $data)">
+    <label for='Background Expires' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='Background Expires' data-content=''
+    > Background Expires</label>
+  <input type='text' name='Background Expires' class='form-control ' data-bind="datetimepicker: {format: 'MM/DD/YYYY HH:mm', timepicker: false, datepicker: true}, enable : fieldEditable('Background Expires', $data), value: $data['Background Expires']">
+  </div>
+  </div>
+        </div>
+        <div class="row" style="min-height:160px" data-bind="">
+    <div class='col-md-11 col-md-offset-0' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['Address'], visible : fieldVisible('Address', $data)">
+    <label for='Address' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='Address' data-content=''
+    > Address</label>
+  <textarea name='Address' class='form-control' data-bind="enable : fieldEditable('Address', $data),
+  visible : fieldVisible('Address', $data), textInput:$data['Address']"
+     style="height: 116px;"></textarea>
+  </div>
+  </div>
+        </div>
+        <div class="row" style="min-height:80px" data-bind="">
+    <div class='col-md-3 col-md-offset-0' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['Facebook Link'], visible : fieldVisible('Facebook Link', $data)">
+    <label for='FB Link' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='FB Link' data-content=''
+    > FB Link</label>
+  <input type='text' name='FB Link' class='form-control ' data-bind="enable : fieldEditable('Facebook Link', $data), textInput: $data['Facebook Link']">
+  </div>
+  </div>
+    <div class='col-md-3 col-md-offset-0' data-bind="with: $root.ds2">
+  <div class='form-group'  data-bind="validationElement: $data['Skype Address'], visible : fieldVisible('Skype Address', $data)">
+    <label for='Skype Address' class='control-label'
+      data-toggle='popover' data-container='body' data-placement='auto' data-trigger='hover'
+      data-html='false' title='Skype Address' data-content=''
+    > Skype Address</label>
+  <input type='text' name='Skype Address' class='form-control ' data-bind="enable : fieldEditable('Skype Address', $data), textInput: $data['Skype Address']">
+  </div>
+  </div>
+        </div>
+        <div class="row" style="min-height:80px" data-bind="">
+    <div class='col-md-3 col-md-offset-0' data-bind="with: $root.ds2">
+  <button class="btn btn-success" data-toggle="tooltip" title="" style="margin-top:20px" data-bind="enable : fieldEditable('', $data), visible : fieldVisible('', $data), click: _1G0E2MH31UCJ($data, $parent, $root)">Save</button>
+  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>        </div>
+      </div>
+    </div>
+
+</body>
+</html>
