@@ -1517,3 +1517,14 @@ java.nio.channels.ClosedByInterruptException: null
 2016/05/25 09:09:54.230 [Thread-7] INFO  o.e.jetty.server.ServerConnector - Started ServerConnector@68d9c823{HTTP/1.1,[http/1.1]}{127.0.0.1:9000} 
 2016/05/25 09:09:54.230 [Thread-7] INFO  org.eclipse.jetty.server.Server - Started @38764ms 
 2016/05/25 09:09:54.231 [Thread-7] INFO  com.app.rcp.server.LocalServer - Started local server successfully. 
+2016/05/25 09:12:08.823 [JavaFX Application Thread] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@609faa89: startup date [Wed May 25 09:09:18 PDT 2016]; root of context hierarchy 
+2016/05/25 09:12:14.277 [JavaFX Application Thread] INFO  com.app.rcp.server.LocalServer - Shutting down server 
+2016/05/25 09:12:14.279 [JavaFX Application Thread] INFO  com.app.rcp.server.LocalServer - Stopping local server 
+2016/05/25 09:12:14.290 [JavaFX Application Thread] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@68d9c823{HTTP/1.1,[http/1.1]}{127.0.0.1:9000} 
+2016/05/25 09:12:14.295 [JavaFX Application Thread] INFO  / - Closing Spring root WebApplicationContext 
+2016/05/25 09:12:14.296 [JavaFX Application Thread] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Wed May 25 09:09:46 PDT 2016]; root of context hierarchy 
+2016/05/25 09:12:14.348 [JavaFX Application Thread] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@5feecf56{/,null,UNAVAILABLE}{jar:file:///Users/stevenlamont/Library/Application%20Support/GOAPPO/wars/dev-local.war!/} 
+2016/05/25 09:12:14.350 [JavaFX Application Thread] INFO  /test - Closing Spring root WebApplicationContext 
+2016/05/25 09:12:14.351 [JavaFX Application Thread] INFO  o.s.w.c.s.XmlWebApplicationContext - Closing Root WebApplicationContext: startup date [Wed May 25 09:09:34 PDT 2016]; root of context hierarchy 
+2016/05/25 09:12:24.345 [JavaFX Application Thread] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@61934970{/test,null,UNAVAILABLE}{jar:file:///Users/stevenlamont/Library/Application%20Support/GOAPPO/wars/webapp-test.war!/} 
+2016/05/25 09:12:24.348 [JavaFX Application Thread] INFO  com.app.rcp.server.LocalServer - Stopped local server 
