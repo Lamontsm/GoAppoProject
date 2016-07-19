@@ -70,7 +70,7 @@
   <script type="text/javascript">
     var pageModel = null;
     function afterEnvLoaded() {
-       var dataSourceDefinitions = [{"type":"caseList","id":"ds2","cookieId":"1MB77R1SGBQQ_1IGO4QVAOD0IJ","name":"list of all projects","dataStoreId":"","dataStoreTag":"","parameters":[],"fields":[{"id":"Project Name","label":"Project Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Assigned Student","label":"Assigned Student","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"meta.createdOn","label":"(Meta) Created on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedOn","label":"(Meta) Modified on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.id","label":"(Meta) Case ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.model","label":"(Meta) Case model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userLabel","label":"(Meta) Owner name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userId","label":"(Meta) Owner ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupLabel","label":"(Meta) Group name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupId","label":"(Meta) Group ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdById","label":"(Meta) Created By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdByLabel","label":"(Meta) Created By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedById","label":"(Meta) Modified By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedByLabel","label":"(Meta) Modified By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"}],"actions":[{"id":"_1U8I1HJ92S3O","name":"select","action":"","fn":"var config = {page : '2SQA1L6U2HOH', caseId : $data.meta.id()};\nreturn this.goTo(config);","goTo":"","args":[{"key":"page","value":"2SQA1L6U2HOH","page":true},{"key":"caseId","value":"$data.meta.id()","page":false}],"fields":[],"requestParameters":[],"responseParameters":[],"triggeredEvent":"","type":"goTo","argKeys":["page","caseId"],"argValues":["2SQA1L6U2HOH","$data.meta.id()"]}],"caseModel":"/project","search":"model:\"/project\" AND -Assigned\\ Student:[* TO *]","rowDataSource":null,"pageSize":20,"listDataSource":true}];
+       var dataSourceDefinitions = [{"type":"caseList","id":"ds2","cookieId":"_1712RSBGPBATK_1NTRLHKZEJ7CR","name":"Available Projects","dataStoreId":"","dataStoreTag":"","parameters":[],"fields":[{"id":"Project Name","label":"Project Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Assigned Student","label":"Assigned Student","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"meta.createdOn","label":"(Meta) Created on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedOn","label":"(Meta) Modified on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.id","label":"(Meta) Case ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.model","label":"(Meta) Case model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userLabel","label":"(Meta) Owner name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userId","label":"(Meta) Owner ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupLabel","label":"(Meta) Group name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupId","label":"(Meta) Group ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdById","label":"(Meta) Created By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdByLabel","label":"(Meta) Created By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedById","label":"(Meta) Modified By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedByLabel","label":"(Meta) Modified By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"}],"actions":[{"id":"_1U8I1HJ92S3O","name":"select","action":"","fn":"var config = {page : '2SQA1L6U2HOH', caseId : $data.meta.id()};\nreturn this.goTo(config);","goTo":"","args":[{"key":"page","value":"2SQA1L6U2HOH","page":true},{"key":"caseId","value":"$data.meta.id()","page":false}],"fields":[],"requestParameters":[],"responseParameters":[],"triggeredEvent":"","type":"goTo","argValues":["2SQA1L6U2HOH","$data.meta.id()"],"argKeys":["page","caseId"]}],"caseModel":"/project","search":"model:\"/project\" AND -Assigned\\ Student:[* TO *]","rowDataSource":null,"pageSize":20,"listDataSource":true},{"type":"case","id":"ds1","cookieId":"_8RVZDVFY6DLS_1LJK8417TALZC","name":"","dataStoreId":"","dataStoreTag":"","parameters":[{"name":"caseId"}],"fields":[{"id":"caseId","label":"(Parameter) caseId","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"parameter"}],"actions":[],"caseModel":"","search":"${caseId}","backupDataSource":null,"listDataSource":false},{"type":"newCase","id":"ds3","cookieId":"1DZKY01XX0GTI_1B613ZAR6PFP8","name":"","dataStoreId":"","dataStoreTag":"","parameters":[{"name":"parentCaseId"}],"fields":[{"id":"Project Name","label":"Project Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"Assigned Student","label":"Assigned Student","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"caseField"},{"id":"meta.createdOn","label":"(Meta) Created on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedOn","label":"(Meta) Modified on","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.id","label":"(Meta) Case ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.model","label":"(Meta) Case model","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userLabel","label":"(Meta) Owner name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.userId","label":"(Meta) Owner ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupLabel","label":"(Meta) Group name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.groupId","label":"(Meta) Group ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdById","label":"(Meta) Created By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.createdByLabel","label":"(Meta) Created By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedById","label":"(Meta) Modified By ID","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"meta.modifiedByLabel","label":"(Meta) Modified By Name","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"meta"},{"id":"parentCaseId","label":"(Parameter) parentCaseId","required":"","email":"","min":"","minLength":"","max":"","maxLength":"","regexp":"","mask":null,"optionsDataSource":"","optionsText":"","optionsValue":"","optionsFilter":"","defaultValue":"","fieldType":"parameter"}],"actions":[],"caseModel":"/project","search":null,"backupDataSource":null,"parentCaseId":"","listDataSource":false}];
          var defaults = {};
            defaults['Project Name'] = '';
            defaults['Assigned Student'] = '';
@@ -87,6 +87,26 @@
            defaults['meta.modifiedById'] = '';
            defaults['meta.modifiedByLabel'] = '';
          dataSourceDefinitions[0].defaults = defaults;
+         var defaults = {};
+           defaults['caseId'] = '';
+         dataSourceDefinitions[1].defaults = defaults;
+         var defaults = {};
+           defaults['Project Name'] = '';
+           defaults['Assigned Student'] = '';
+           defaults['meta.createdOn'] = '';
+           defaults['meta.modifiedOn'] = '';
+           defaults['meta.id'] = '';
+           defaults['meta.model'] = '';
+           defaults['meta.userLabel'] = '';
+           defaults['meta.userId'] = '';
+           defaults['meta.groupLabel'] = '';
+           defaults['meta.groupId'] = '';
+           defaults['meta.createdById'] = '';
+           defaults['meta.createdByLabel'] = '';
+           defaults['meta.modifiedById'] = '';
+           defaults['meta.modifiedByLabel'] = '';
+           defaults['parentCaseId'] = '';
+         dataSourceDefinitions[2].defaults = defaults;
        pageModel = new PageModel(dataSourceDefinitions);
          
          var viewModel = pageModel['ds2'];
@@ -97,13 +117,8 @@
 return this.goTo(config);
            };
   var byX = {};
-      var columnModel = {id: "Project Name", field : "Project Name", label : "Name of the Project"};
+      var columnModel = {id: "Project Name", field : "Project Name", label : "Available Projects"};
       byX['0'] = columnModel;
-      viewModel.visibleOrderedColumns.push(columnModel);
-    
-    viewModel.allColumns.push(columnModel);
-    var columnModel = {id: "Assigned Student", field : "Assigned Student", label : "Assigned Student"};
-      byX['5'] = columnModel;
       viewModel.visibleOrderedColumns.push(columnModel);
     
     viewModel.allColumns.push(columnModel);
@@ -111,15 +126,83 @@ return this.goTo(config);
         if (col) {
           col.rowId = '2RC22JCB2EQF';
         }
-        var col = byX['5'];
-        if (col) {
-          col.rowId = '1JZ125ID2JNM';
-        }
 viewModel.sorter(viewModel.allColumns()[0].id);
 
 viewModel.allFields = [];
     viewModel.allFields.push({id: "Project Name", label : "Project Name"});
     viewModel.allFields.push({id: "Assigned Student", label : "Assigned Student"});
+         
+         var viewModel = pageModel['ds1'];
+         var $data = viewModel;
+         var $root = pageModel;
+           
+           viewModel['caseId'].extend({
+           });
+           
+         
+         var viewModel = pageModel['ds3'];
+         var $data = viewModel;
+         var $root = pageModel;
+           
+           viewModel['Project Name'].extend({
+           });
+           
+           
+           viewModel['Assigned Student'].extend({
+           });
+           
+           
+           viewModel['meta.createdOn'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedOn'].extend({
+           });
+           
+           
+           viewModel['meta.id'].extend({
+           });
+           
+           
+           viewModel['meta.model'].extend({
+           });
+           
+           
+           viewModel['meta.userLabel'].extend({
+           });
+           
+           
+           viewModel['meta.userId'].extend({
+           });
+           
+           
+           viewModel['meta.groupLabel'].extend({
+           });
+           
+           
+           viewModel['meta.groupId'].extend({
+           });
+           
+           
+           viewModel['meta.createdById'].extend({
+           });
+           
+           
+           viewModel['meta.createdByLabel'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedById'].extend({
+           });
+           
+           
+           viewModel['meta.modifiedByLabel'].extend({
+           });
+           
+           
+           viewModel['parentCaseId'].extend({
+           });
+           
        try {
        pageModel.initialize(function() {
          try {
@@ -249,10 +332,16 @@ viewModel.allFields = [];
 <div class=' col-md-offset-0' data-bind=", css: {'col-md-12' : $root.maximizedPanel() == null, 'col-md-12' : $root.maximizedPanel() != null }, visible: ($root.maximizedPanel() == null) || '21IA1Q3P2OE1' == $root.maximizedPanel()">
   <div class='panel panel-primary' style="min-height: 560px;position:relative">
     <div class='panel-heading'>
-      <h3 class='panel-title'>Heading</h3>
+      <h3 class='panel-title'>Available Project Listing for APCS</h3>
     </div>
     <div class='panel-body'>
       <div class="container-fluid">
+        <div class="row" style="min-height:80px" data-bind="slideVisible: true">
+    <div class='col-md-5 col-md-offset-0' data-bind="with: $root.ds2">
+
+<span  data-bind="text : $data['Assigned Student'] ? ($data['Assigned Student'].mimeType ? $data['Assigned Student'].name : $data['Assigned Student']) : ''" style="text-align:left;">Class: You are responsible for preparing a 2-minute video for a topic area. Select an available topic from the list below, and add your name to it.</span>
+  </div>
+        </div>
         <div class="row" style="min-height:480px" data-bind="">
     <div class='col-md-11 col-md-offset-0' data-bind="with: $root.ds2">
 <div id='1FKJ2O3I2MOWtable' style="margin-left:5px;margin-right:5px;">
@@ -375,9 +464,6 @@ viewModel.allFields = [];
 
   <script type="text/template" id="2RC22JCB2EQF">
 <span  data-bind="text : $data['Project Name'] ? ($data['Project Name'].mimeType ? $data['Project Name'].name : $data['Project Name']) : ''" style="text-align:left;">Text</span>
-  </script>
-  <script type="text/template" id="1JZ125ID2JNM">
-<span  data-bind="text : $data['Assigned Student'] ? ($data['Assigned Student'].mimeType ? $data['Assigned Student'].name : $data['Assigned Student']) : ''" style="text-align:left;">Text</span>
   </script>
         </div>
       </div>
